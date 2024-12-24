@@ -1,5 +1,6 @@
-// https://api.openweathermap.org/data/2.5/weather?q=London&appid=9c326ac0211a217cde5e8b4ca7addaab
-const apiKey = "df2d382b8646f6f1af6c21a78a6517fd";
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
 const city = "London";
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
