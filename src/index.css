@@ -8,9 +8,11 @@
   --color-secondary: hsl(0, 0%, 0%);
   --color-accent: hsl(212, 100%, 51%);
   --color-tertiary: hsl(0, 0%, 51%);
+  --color-hover: hsl(0, 0%, 100%);
 
   --font-primary: "Nunito Sans";
   --font-secondary: "Montserrat";
+  --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
   --font-semibold: 600;
@@ -62,7 +64,7 @@ body {
 /* Nav Bar */
 nav {
   position: sticky;
-  top: 1%;
+  top: 0;
   display: flex;
   justify-content: center;
 }
@@ -88,7 +90,7 @@ nav .container .items a {
   text-decoration: none;
 }
 nav .container .items a:hover {
-  color: var(--color-primary);
+  color: var(--color-hover);
   transform: translateY(-1px) scale(1.05);
   transition: transform 200ms ease-in;
 }
@@ -118,7 +120,7 @@ main .banner {
   display: flex;
   flex-direction: column;
   text-align: right;
-  margin-right: 100px;
+  margin: 50px 100px 0px 0px;
 }
 main .banner h1 {
   color: var(--color-secondary);
@@ -134,7 +136,8 @@ main .banner p {
 }
 
 .photos {
-  margin-left: 100px;
+  margin-left: 60px;
+  margin-top: 30px;
 }
 main .photos .top {
   position: relative;
@@ -194,17 +197,19 @@ main .photos .bottom {
 }
 
 .scroll {
+  margin-top: 30px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 .scroll p {
   font-family: var(--font-secondary);
-  font-weight: var(--font-regular);
-  font-size: var(--font-16);
+  font-weight: var(--font-light);
+  font-size: var(--font-16) !important;
   color: var(--color-tertiary);
 }
 .scroll .fa-solid {
-  margin: 0px 28px 0px 10px;
+  margin-left: 10px;
   padding: 25px;
   border-radius: 10px;
   color: var(--color-primary);
@@ -213,6 +218,36 @@ main .photos .bottom {
 }
 .scroll .fa-solid:hover {
   cursor: pointer;
-  transform: scale(1.04) translateY(-2px);
+  transform: scale(1.07) translateY(-2px);
   transition: transform 200ms ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .photos {
+    transform: scale(0.9);
+    margin-left: 25px;
+  }
+  main .banner {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .photos {
+    margin-left: 0px;
+    order: 2;
+  }
+  main .banner {
+    margin-top: 20px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+  }
+  .buttons .container {
+    margin-top: 50px;
+  }
 }

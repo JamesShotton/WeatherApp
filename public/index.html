@@ -18,26 +18,38 @@
       src="https://kit.fontawesome.com/3d736ff224.js"
       crossorigin="anonymous"
     ></script>
-    <!--
+
     <style>
-      @keyframes appear {
+      @keyframes appear1 {
         from {
-          transform: scale(0.8);
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+      }
+      @keyframes appear3 {
+        from {
+          transform: translateY(-100%);
           opacity: 0.5;
         }
         to {
-          transform: scale(1);
+          transform: translateY(0px);
           opacity: 1;
         }
       }
-  
       nav {
-        animation-name: appear;
-        animation-duration: 350ms;
-        animation-timing-function: ease; 
+        animation-name: appear1;
+        animation-duration: 200ms;
+        animation-timing-function: ease;
+      }
+      .banner {
+        animation-name: appear3;
+        animation-duration: 800ms;
+        animation-timing-function: ease;
       }
     </style>
-  --></head>
+  </head>
 
   <body>
     <!-- NavBar -->
@@ -73,7 +85,7 @@
         <img class="top" src="/assets/images/forest-8592902_1920.webp" />
         <img class="bottom" src="/assets/images/lake-6798400_1280.webp" />
       </div>
-      <div class="banner">
+      <div id="banner" class="banner">
         <h1>
           Your all <br />in one <br />weather<br />
           app..
@@ -82,6 +94,10 @@
           We are here to serve you the <br />latest and most easily accessible
           <br />weather updates
         </p>
+        <div id="scroll" class="scroll">
+          <p>Scroll to explore</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
       </div>
     </main>
 
@@ -91,25 +107,13 @@
           <p id="dark">Dark</p>
           <p id="light">Light</p>
         </div>
-        <div class="scroll">
-          <p>Scroll to explore</p>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
       </div>
     </section>
-    <script>
-      const dark = document.getElementById("dark");
-      const light = document.getElementById("light");
-      dark.onclick = function () {
-        document.documentElement.classList.add("dark-theme");
-        dark.style.setProperty("color", "white");
-        light.style.setProperty("color", "var(--color-tertiary)");
-      };
-      light.onclick = function () {
-        document.documentElement.classList.remove("dark-theme");
-        dark.style.setProperty("color", "var(--color-tertiary)");
-        light.style.setProperty("color", "black");
-      };
-    </script>
+
+    <!-- Input Section -->
+
+    <section class="input"></section>
+
+    <script src="/src/mode.js"></script>
   </body>
 </html>
