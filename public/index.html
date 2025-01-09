@@ -13,12 +13,10 @@
 
     <title>Weather Radar</title>
 
-    <script src="/src/fetch.js"></script>
     <script
       src="https://kit.fontawesome.com/3d736ff224.js"
       crossorigin="anonymous"
     ></script>
-
     <style>
       @keyframes appear1 {
         from {
@@ -39,7 +37,7 @@
         }
       }
       nav {
-        animation-name: appear1;
+        animation-name: appear3;
         animation-duration: 200ms;
         animation-timing-function: ease;
       }
@@ -112,8 +110,51 @@
 
     <!-- Input Section -->
 
-    <section class="input"></section>
+    <section class="input">
+      <div class="left">
+        <h1>Get real time <br />updates</h1>
+        <p>
+          Receive live updates on changes in weather in your <br />
+          area such as hazards or floods
+        </p>
+        <div class="img-area">
+          <img class="top" src="/assets/images/landscape-8598886_640.webp" />
+          <img
+            class="bottom"
+            src="/assets/images/mountains-8306568_1280.webp"
+          />
+        </div>
+      </div>
 
+      <div class="right">
+        <div class="container">
+          <div class="items">
+            <svg
+              style="margin-left: 5px"
+              width="20"
+              height="23"
+              viewBox="0 0 20 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="10" cy="2.5" r="2.5" fill="white" />
+              <circle cx="17.5" cy="7.5" r="2.5" fill="white" />
+              <circle cx="2.5" cy="7.5" r="2.5" fill="white" />
+              <circle cx="2.5" cy="15" r="2.5" fill="white" />
+              <circle cx="17.5" cy="15" r="2.5" fill="white" />
+              <circle cx="10" cy="20" r="2.5" fill="white" />
+            </svg>
+            <input id="input" type="text" placeholder="Enter city here.." />
+            <button id="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container-cards"></div>
+      </div>
+    </section>
+
+    <script src="/src/fetch.js"></script>
     <script src="/src/mode.js"></script>
   </body>
 </html>

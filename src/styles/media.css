@@ -1,0 +1,69 @@
+@media screen and (max-width: 1300px) {
+  .input .left {
+    margin: 55px 0px 0px 70px;
+  }
+  input .right {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .photos {
+    transform: scale(0.9);
+    margin-left: 25px;
+  }
+  main .banner {
+    margin-right: 50px;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+  .input .right {
+    width: 100vw;
+  }
+  .input .right .container {
+    margin: 100px;
+  }
+  .input .left {
+    margin: 0px 0px 0px 0px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .container-cards {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  main .photos {
+    margin-left: 0px;
+    order: 2;
+  }
+  main .banner {
+    margin-top: 20px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+  }
+  .buttons .container {
+    margin-top: 50px;
+  }
+  .left .img-area {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  main,
+  .input,
+  nav {
+    transform: scale(0.95);
+  }
+  .card {
+    transform: scale(0.9);
+  }
+}

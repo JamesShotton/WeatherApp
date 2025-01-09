@@ -1,0 +1,114 @@
+/* Hero */
+  
+  main {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  main .banner {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 50px 100px 0px 0px;
+  }
+  main .banner h1 {
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+    font-size: var(--font-100);
+    line-height: 80px;
+    margin-bottom: 60px;
+  }
+  main .banner p {
+    color: var(--color-tertiary);
+    font-family: var(--font-primary);
+    font-size: var(--font-24);
+  }
+  
+  .photos {
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  main .photos .top {
+    position: relative;
+    left: 10%;
+    width: 40vw;
+    height: 377px;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: rotate(-7deg);
+    z-index: -3;
+    filter: var(--normal-shadow);
+  }
+  main .photos .bottom {
+    position: relative;
+    left: 10%;
+    top: -10%;
+    width: 45vw;
+    height: 337px;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: rotate(7deg);
+    z-index: -2;
+    filter: var(--normal-shadow);
+  }
+  
+  .buttons .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px dotted var(--nav-color);
+  }
+  .buttons .mode {
+    display: flex;
+    margin-left: 40px;
+    border: 2px dotted var(--color-accent);
+    border-radius: 20px;
+    font-family: var(--font-primary);
+    font-size: var(--font-20);
+    font-weight: var(--font-bold);
+  }
+  .buttons .mode #dark {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 14px;
+    color: var(--color-tertiary);
+  }
+  .buttons .mode #dark:hover {
+    color: var(--color-secondary);
+    transition: color 300ms ease;
+  }
+  .buttons .mode #light {
+    cursor: pointer;
+    padding: 12px 14px;
+  }
+  .buttons .mode #light:hover {
+    color: var(--color-secondary);
+    transition: color 300ms ease;
+  }
+  
+  .scroll {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .scroll p {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-light);
+    font-size: var(--font-16) !important;
+    color: var(--color-tertiary);
+  }
+  .scroll .fa-solid {
+    margin-left: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    filter: var(--normal-shadow);
+  }
+  .scroll .fa-solid:hover {
+    cursor: pointer;
+    transform: scale(1.07) translateY(-2px);
+    transition: transform 200ms ease;
+  }
