@@ -1,7 +1,7 @@
-@import url(./styles/navbar.css);
-@import url(./styles/banner.css);
-@import url(./styles/media.css);
-@import url(./styles/input.css);
+@import url(./navbar.css);
+@import url(./banner.css);
+@import url(./media.css);
+@import url(./input.css);
 
 * {
   margin: 0px;
