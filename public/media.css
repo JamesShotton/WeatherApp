@@ -20,7 +20,7 @@
     flex-direction: column;
   }
   .input .right {
-    width: 100vw;
+    margin-right: 0px;
   }
   .input .right .container {
     margin: 100px;
@@ -29,9 +29,6 @@
     margin: 0px 0px 0px 0px;
     margin-top: 60px;
     text-align: center;
-  }
-  .container-cards {
-    flex-wrap: nowrap;
   }
 }
 
