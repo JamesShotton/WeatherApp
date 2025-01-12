@@ -211,8 +211,8 @@
 }
 .container-cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .fa-sun {

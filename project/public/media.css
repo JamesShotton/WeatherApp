@@ -14,6 +14,7 @@
   }
   main .banner {
     margin-right: 50px;
+    text-align: center;
   }
 
   .input {
@@ -60,7 +61,10 @@
   nav {
     transform: scale(0.95);
   }
-  .card {
-    transform: scale(0.9);
+  .card.rain,
+  .card.sun,
+  .card.cloud {
+    margin: 0px !important;
+    transform: scale(0.90) !important;
   }
 }
